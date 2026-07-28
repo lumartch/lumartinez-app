@@ -1,8 +1,8 @@
 {
-    "name": "@lumartinez/tsconfig",
-    "description": "Common tsconfig for all projects.",
-    "authors": "Luis Martínez",
-    "version": "1.0.0",
-    "main": "pathToMain",
-    "dependencies": {}
+  "name": "@lumartinez/tsconfig",
+  "description": "Common tsconfig for all projects.",
+  "version": "1.0.0",
+  "authors": "Luis Martínez",
+  "dependencies": {},
+  "main": "pathToMain"
 }

@@ -1,15 +1,25 @@
 {
   "name": "lumartinez-apps",
-  "version": "1.0.0",
   "description": "Lumartinez App is a monorepo dedicated to handle common libraries to be used in several projects, making easy to re-use components or libraries without hosting it in npm or articaftory",
-  "license": "ISC",
+  "version": "1.0.0",
   "author": "Luis Martínez",
-  "type": "commonjs",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "packageManager": "pnpm@11.17.0+sha512.cca3cea332ad254bb84145f966d19f4879615210346fc92c79a047f23a0d7b3cca3c3792f0076ba1f1831d277efbcf0a9119b31a9a60eca7fb3d6231f331ef72",
-  "dependencies": {
+  "devDependencies": {
+    "rimraf": "^6.0.0",
+    "syncpack": "^15.3.2",
     "turbo": "^2.10.7"
-  }
+  },
+  "engines": {
+    "node": ">=24.18.0"
+  },
+  "license": "ISC",
+  "packageManager": "pnpm@11.17.0+sha512.cca3cea332ad254bb84145f966d19f4879615210346fc92c79a047f23a0d7b3cca3c3792f0076ba1f1831d277efbcf0a9119b31a9a60eca7fb3d6231f331ef72",
+  "scripts": {
+    "build:components": "turbo run build --filter=@lumartinez/ui",
+    "clear": "pnpm -r exec rimraf node_modules dist .next .turbo && pnpm exec rimraf node_modules .turbo",
+    "dev:components": "turbo run dev --filter=@lumartinez/ui",
+    "lint:components": "turbo run lint --filter=@lumartinez/ui",
+    "pkg:fix": "syncpack fix --config syncpack.config.js && syncpack format --config syncpack.config.js",
+    "pkg:list": "syncpack list --config syncpack.config.js"
+  },
+  "type": "commonjs"
 }
