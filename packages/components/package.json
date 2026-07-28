@@ -1,0 +1,8 @@
+{
+    "name": "@lumartinez/components",
+    "description": "Library of custom ReactJS components",
+    "authors": "Luis Martínez",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+    "name": "@lumartinez/lint",
+    "description": "Library of lint rules to have a standarized code among all projects",
+    "authors": "Luis Martínez",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {}
+}
