@@ -1,1 +1,1 @@
-export { BaseInput } from './BaseInput.component'
+export { BaseInput } from './BaseInput.component';

@@ -1,1 +1,1 @@
-export {BaseButton} from './base'
+export { BaseButton } from './base';

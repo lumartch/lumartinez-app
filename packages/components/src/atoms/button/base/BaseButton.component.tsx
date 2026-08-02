@@ -1,7 +1,7 @@
-import type { ComponentProps, JSX } from "react"
+import type { ComponentProps, JSX } from 'react';
 
-type Props = ComponentProps<'button'>
+type Props = ComponentProps<'button'>;
 
 export const BaseButton = ({ children, ...props }: Props): JSX.Element => {
-    return <button {...props}>{children}</button>
-}
+	return <button {...props}>{children}</button>;
+};

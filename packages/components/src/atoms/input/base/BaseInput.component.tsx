@@ -1,7 +1,7 @@
-import type { ComponentProps } from "react";
+import { type ComponentProps } from 'react';
 
-type Props = ComponentProps<'input'>
+type Props = ComponentProps<'input'>;
 
 export const BaseInput = (props: Props) => {
-    return <input {...props}></input>
-}
+	return <input {...props}></input>;
+};
