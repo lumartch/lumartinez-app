@@ -1,9 +1,16 @@
-import type { ComponentProps } from 'react';
+import type { TextPropsMap } from './type';
 
-type Props = ComponentProps<'p'>;
+import { TextType } from './enum';
+import { textLookup } from './text.lookup';
 
-export const Text = ({ children, ...props }: Props) => {
-	return <p {...props}>{children}</p>;
+type Props<T extends TextType> = TextPropsMap[T] & {
+	type?: T;
+};
+
+export const Text = <T extends TextType = TextType.PARAGRAPH>({ type, ...props }: Props<T>) => {
+	const resolvedType = (type ?? TextType.PARAGRAPH) as T;
+
+	return textLookup[resolvedType](props as TextPropsMap[T]);
 };
 
 Text.displayName = 'Text';
