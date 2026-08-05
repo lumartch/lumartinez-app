@@ -1,1 +1,2 @@
-export { BaseIcon } from './Icon.component';
+export { IconType } from './enum';
+export { Icon } from './Icon.component';

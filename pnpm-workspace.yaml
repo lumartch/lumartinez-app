@@ -3,4 +3,7 @@ packages:
   - 'packages/*'
   - '!**/.next/**'
 
+allowBuilds:
+  esbuild: false
+
 nodeLinker: hoisted

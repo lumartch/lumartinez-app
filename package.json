@@ -20,7 +20,8 @@
     "lint:components": "turbo run lint --filter=@lumartinez/ui",
     "lint:components-fix": "turbo run lint:fix --filter=@lumartinez/ui",
     "pkg:fix": "syncpack fix --config syncpack.config.js && syncpack format --config syncpack.config.js",
-    "pkg:list": "syncpack list --config syncpack.config.js"
+    "pkg:list": "syncpack list --config syncpack.config.js",
+    "storybook": "turbo run storybook --filter=@lumartinez/storybook"
   },
   "type": "commonjs"
 }
