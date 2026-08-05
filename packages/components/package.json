@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "authors": "Luis Martínez",
   "dependencies": {
+    "lucide-react": "^1.28.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },

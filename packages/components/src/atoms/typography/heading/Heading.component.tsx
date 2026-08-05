@@ -6,7 +6,7 @@ type Props = ComponentProps<'h1'> & {
 	type?: HeadingType;
 };
 
-export const Heading = ({ children, type = HeadingType.H2, ...props }: Props) => {
+export const Heading = ({ children, type = HeadingType.H1, ...props }: Props) => {
 	switch (type) {
 		case HeadingType.H1:
 			return <h1 {...props}>{children}</h1>;
@@ -23,4 +23,4 @@ export const Heading = ({ children, type = HeadingType.H2, ...props }: Props) =>
 	}
 };
 
-Heading.displayName = 'Heading'
+Heading.displayName = 'Heading';
